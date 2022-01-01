@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <style>
+            div{
+                font-size: 50px;
+                border: solid 5px slateblue;
+            }
+            
+            /* 800이상일때 사라짐 screen width >= 800(조건을 만족하는 가장 작은것이 800이다)
+            @media(min-width: 800px) {
+                div {
+                    display: none;
+                }
+            }
+            */
+
+            /* 800이하일때 사라짐 screen width <= 800(조건을 만족하는 최대로 큰 것이 800이다)*/
+            @media(max-width: 800px) {
+                div {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div>
+            mideaquery
+        </div>
+    </body>
+</html>
